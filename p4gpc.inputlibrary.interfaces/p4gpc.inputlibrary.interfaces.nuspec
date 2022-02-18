@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>p4gpc.inputlibrary.interfaces</id>
+    <version>1.0.0</version>
+    <title>Persona 4 Golden Input Library</title>
+    <authors>Rirurin</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <!-- <icon>icon.png</icon> -->
+    <projectUrl>http://google.com</projectUrl>
+    <description>Read inputs from Persona 4 Golden</description>
+  </metadata>
+</package>

@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <OutputType>WinExe</OutputType>
+    <Authors>Rirurin</Authors>
+    <Product>Persona 4 Golden Input Library</Product>
+    <Description>A library for adding input reading capability into Reloaded-II mods for Persona 4 Golden</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Users\Bryce\Rirurin\p4g-cbt\tools\Reloaded\Mods\p4gpc.inputlibrary\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	<OutputPath>C:\Users\Bryce\Rirurin\p4g-cbt\tools\Reloaded\Mods\p4gpc.inputlibrary\</OutputPath>
+</PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ModConfig.json" />
+    <None Remove="Preview.png" />
+    <None Remove="Publish.ps1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ModConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Reloaded.Hooks.Definitions" Version="1.12.0" />
+    <PackageReference Include="Reloaded.Memory" Version="4.1.3" />
+    <PackageReference Include="Reloaded.Memory.Sigscan" Version="1.2.1" />
+    <PackageReference Include="Reloaded.Mod.Interfaces" Version="1.10.1" />
+    <PackageReference Include="Reloaded.SharedLib.Hooks" Version="1.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\p4gpc.inputlibrary.interfaces\p4gpc.inputlibrary.interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

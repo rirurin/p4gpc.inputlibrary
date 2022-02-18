@@ -1,0 +1,16 @@
+{
+  "ModId": "p4gpc.inputlibrary",
+  "ModName": "Persona 4 Golden Input Library",
+  "ModAuthor": "Rirurin",
+  "ModVersion": "1.0.0",
+  "ModDescription": "A library to read and write inputs in Persona 4 Golden",
+  "ModDll": "p4gpc.inputlibrary.dll",
+  "ModIcon": "thumb.png",
+  "ModR2RManagedDll32": "x86/p4gpc.inputlibrary.dll",
+  "ModR2RManagedDll64": "x64/p4gpc.inputlibrary.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "ModDependencies": [ "reloaded.sharedlib.hooks" ],
+  "OptionalDependencies": null,
+  "SupportedAppId": [ "p4g.exe" ]
+}
